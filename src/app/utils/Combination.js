@@ -1,8 +1,6 @@
 export default class Combination {
 
   constructor(grid, combinationLength) {
-    console.log(grid);
-    console.log(combinationLength);
     this.delta = [
       [-1, 1],  [0, 1], [1, 1],
       [-1, 0],          [1, 0],
