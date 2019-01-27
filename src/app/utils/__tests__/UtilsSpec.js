@@ -18,9 +18,9 @@ describe('isFilled', () => {
 });
 
 describe('getCombinations', () => {
-  it('retrieve adjacent values', () => {
+  it('retrieve double digit unique combinations', () => {
     const testSample = [[1,2],[3,4]]
 
-    expect(getCombinations(testSample).sort()).toEqual(['12','13','14','23','34','24'].sort());
+    expect(getCombinations(testSample, 2).sort()).toEqual(['12','13','14','23','34','24'].sort());
   });
 });
