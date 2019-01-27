@@ -14,7 +14,7 @@ export default class Result extends React.Component {
   displayCombinations() {
     const combinations = this.props.combinations.map((combination, index) => {
       return (
-        <div className="pure-u-1-8" key={index}>
+        <div className="pure-u-1-6" key={index}>
           <p>{combination}</p>
         </div>
       )
