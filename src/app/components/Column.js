@@ -11,7 +11,6 @@ const Column = (props) =>  {
       <input style={inputStyle}
         value={value}
         onChange={(e) => {
-          console.log(`IM INSIDE`)
           return callback(e, index)}
         }
         maxLength='1' />
