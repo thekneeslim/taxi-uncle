@@ -7,7 +7,7 @@ import 'purecss/build/pure.css'
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="background">
         <Page />
       </div>
     );

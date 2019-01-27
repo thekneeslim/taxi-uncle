@@ -1,0 +1,13 @@
+.spacer {
+  margin-top: 5%;
+}
+
+.imageResize {
+  width: 100%;
+}
+
+.border {
+  border-radius: 25px;
+  border: 2px solid #E00000;
+  padding: 20px;
+}
