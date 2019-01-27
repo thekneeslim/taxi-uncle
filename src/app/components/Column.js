@@ -13,7 +13,8 @@ const Column = (props) =>  {
         onChange={(e) => {
           return callback(e, index)}
         }
-        maxLength='1' />
+        maxLength='1'
+        type='number' />
     </td>
   )
 }
