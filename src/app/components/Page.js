@@ -12,8 +12,8 @@ export default class Page extends React.Component {
     this.getCombinations = this.getCombinations.bind(this);
   }
 
-  getCombinations(grid) {
-    console.log(grid)
+  getCombinations(combinations) {
+    this.setState({ combinations });
   }
 
   render() {

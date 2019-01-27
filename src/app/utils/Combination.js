@@ -1,6 +1,8 @@
 export default class Combination {
 
   constructor(grid, combinationLength) {
+    console.log(grid);
+    console.log(combinationLength);
     this.delta = [
       [-1, 1],  [0, 1], [1, 1],
       [-1, 0],          [1, 0],
@@ -12,7 +14,7 @@ export default class Combination {
 
   getCombinations = () => {
     this.getValues();
-    return Array.from(new Set(this.combinations))
+    return Array.from(new Set(this.combinations)).sort();
   }
 
   getValues = () => {

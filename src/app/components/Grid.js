@@ -1,7 +1,7 @@
 import React from 'react';
 import Row from './Row';
 import { isFilled } from '../utils/Utils';
-
+import Combination from '../utils/Combination';
 export default class Grid extends React.Component {
 
   constructor(props) {
@@ -17,7 +17,9 @@ export default class Grid extends React.Component {
     grid[row][column] = value;
     this.setState({ data: grid })
     if (isFilled(this.state.data)) {
-      this.props.getCombinations(this.state.data);
+      console.log("It's filled!")
+      const combinationUtils = new Combination(this.state.data, 4)
+      this.props.getCombinations(combinationUtils.getCombinations());
     }
   }
 
